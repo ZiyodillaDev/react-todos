@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.bg{
+    background: #00000055;
+}
+.siteHeader{
+display: flex;
+align-items: center;
+justify-content: space-between;
+max-width: 1400px;
+width: 100%;
+margin: 0 auto;
+padding: 10px 0;
+}
+
+
+.todoImg{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.todoText{
+    color: #fffffff1;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+// dark-light
+.dark-light {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #dadada;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        & img {
+            filter: invert(0%) sepia(1%) saturate(3%) hue-rotate(357deg) brightness(11%) contrast(100%);
+            transition: 0.5s;
+        }
+    }
+
+    &:active {
+        background: #5267ee !important;
+
+        & img {
+            filter: invert(100%) sepia(79%) saturate(2%) hue-rotate(131deg) brightness(127%) contrast(100%);
+            fill: #fff;
+            transition: 0.5s;
+        }
+    }
+}
+
+.btn img {
+    content: url(../../assets/images/sun.svg) !important;
+    filter: invert(0%) sepia(1%) saturate(3%) hue-rotate(357deg) brightness(11%) contrast(100%) !important;
+}
+
+.btn{
+transition: 0.5s;
+&:hover{
+    & img{
+    filter: invert(0%) sepia(1%) saturate(3%) hue-rotate(357deg) brightness(151%) contrast(100%) !important;
+    }
+}
+&:active {
+    background: #ec9f1a !important;
+}
+}
+
+
+.dark {
+    background-color: #262626cc;
+}
+
+
