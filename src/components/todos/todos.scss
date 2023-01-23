@@ -87,6 +87,7 @@
     margin-left: 10px;
     width: 18px;
     height: 18px;
+    cursor: pointer;
 }
 .todovalue{
     flex: 1;
@@ -131,4 +132,8 @@ border: none;
 
 .todos{
     position: relative;
+}
+
+.line{
+    text-decoration: line-through;
 }
